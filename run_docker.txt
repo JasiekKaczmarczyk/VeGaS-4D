@@ -1,0 +1,8 @@
+docker run --gpus all \
+            -u $(id -u) \
+            -v ${PWD}:/workspace/ \
+            -p 7007:7007 \
+            --rm \
+            -it \
+            --shm-size=12gb \
+            ghcr.io/nerfstudio-project/nerfstudio:latest
